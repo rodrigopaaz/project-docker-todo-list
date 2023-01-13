@@ -4,6 +4,4 @@ COPY . .
 
 ADD ./node_modules.tar.gz .
 
-WORKDIR /app
-
 CMD [ "npm", "test" ]
