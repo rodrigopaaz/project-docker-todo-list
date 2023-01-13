@@ -1,6 +1,6 @@
 FROM mjgargani/puppeteer:trybe1.0
 
-COPY . .
+COPY . ./app
 
 ADD ./node_modules.tar.gz .
 
