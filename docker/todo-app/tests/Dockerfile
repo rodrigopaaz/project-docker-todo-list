@@ -4,6 +4,6 @@ WORKDIR /app
 
 ADD ./node_modules.tar.gz .
 
-COPY . .
+COPY . ./app/files
 
 CMD [ "npm", "test" ]
