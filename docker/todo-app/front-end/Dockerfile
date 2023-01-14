@@ -1,11 +1,11 @@
 FROM node:14
 
-COPY . /usr/local/bin/
-
-ADD ./node_modules.tar.gz /usr/local/bin/
+EXPOSE 3000
 
 WORKDIR /app
 
-CMD [ "npm", "start" ]
+ADD ./node_modules.tar.gz .
 
-EXPOSE 3000
+COPY . .
+
+CMD [ "npm", "start" ]
