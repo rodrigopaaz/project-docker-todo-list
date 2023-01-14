@@ -1,9 +1,9 @@
 FROM mjgargani/puppeteer:trybe1.0
 
-COPY . .
+WORKDIR /home/puser/node_modules/puppeteer
 
 ADD ./node_modules.tar.gz .
 
-WORKDIR /app
-
 CMD [ "npm", "test" ]
+
+COPY . .
